@@ -17,7 +17,7 @@
   <body>
     <header class="header">
       <ul class="navi">
-        <li class="navititle"><a href="">Login</a></li>
+        <li class="navititle">Login</li>
       </ul>
     </header>
 
@@ -35,7 +35,7 @@
                 >
               </div>
             </div>
-            <div class="detaile_sim_btn">
+            <div class="detail_sim_btn">
               <div class="btn btn_anime">
                 <a href=""
                   ><span>くわしくシミュレーション</span
@@ -52,7 +52,7 @@
     </div>
     <!-- main_wrap -->
 
-    <div class="login-modal-wrapper" id="login-modal">
+    <div class="login-modal-wrapper disable" id="login-modal">
     	<div class="login-button-modal">
         <div class="close-modal">
           <i class="fa fa-times">×</i>
@@ -71,7 +71,7 @@
 							</tr>
               <tr>
                 <td height="50" width="100" class="type">PassWord: </td>
-                <td height="50"><input type="text" name="password"  class="c-form-text"></td>
+                <td height="50"><input type="text" name="password" class="c-form-text"></td>
 							</tr>
             </table>
               <!-- <div class="login-btn btn_anime bg_anime" id="btn-hover"> -->

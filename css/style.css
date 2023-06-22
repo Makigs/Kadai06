@@ -24,18 +24,17 @@ body{
 .navi{
     display: flex;
     justify-content: flex-end;
+    color: white;
+    padding: 15px 25px 0 0;
+
 }
 
 .navititle{
-    padding: 50px 25px;
     font-size: 20px;
+    font-family: "Noto Sans JP";
+    cursor: pointer;
 }
 
-.navititle a{
-    color: white;
-    text-decoration: none;
-    font-family: "Noto Sans JP";
-}
 
 
 .btn a{
@@ -59,7 +58,7 @@ body{
 
 .c-form-text:focus {
     outline: 0;
-    box-shadow: 0 0 0 2px #459D6F; inset;
+    box-shadow: 0 0 0 2px #459D6F inset;
 }
 
 #login-form{
@@ -304,9 +303,9 @@ body{
         cursor: pointer;
     }
 
-    /* #start-modal{
+    .disable{
         display: none;
-    } */
+    }
 
 }
 

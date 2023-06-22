@@ -14,6 +14,15 @@ import { app, db, storage } from "./firebase.js";
 // -------------------------------6/22課題-------------------------------------
 
 
+$(".navititle").click(function(){
+  $(".login-modal-wrapper").removeClass("disable");
+});
+
+
+// ×をクリックしたら、消す
+$(".fa").click(function(){
+  $(".login-modal-wrapper").addClass("disable");
+});
 
 
 
