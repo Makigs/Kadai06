@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Load TensorFlow.js. This is required to use coco-ssd model. -->
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"> </script>
+	<!-- Load the coco-ssd model. -->
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"> </script>
+
+    <title>かんたんシミュレーション</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style_easy.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500&family=M+PLUS+Rounded+1c:wght@700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="main_wrap">
+      <div class="main">
+        <div class="main_message">かんたん<br />シミュレーション</div>
+        <div class="main_message_2">ORAL HEALTH SIMULATION</div>
+        <div class="main_message_3">＼まずはシミュレーションしてみましょう／</div>
+        <img class="main_pic" src="img/tooth.png" alt="歯君" />
+      </div>
+    </div>
+
+		<section class="sim-section">
+			<div class="sim-section-body">
+				<div class="sim-h2"><h2>ヒアリング項目</h2></div>
+
+				<div class="s-form-e">
+
+					<div class="s-form-e-wrap">
+						<div class="s-form-e-item"><span class="s-req-o">任意</span><span class="s-form-e-item_ttl1">ニックネーム</span><span class="s-form-e-item_ttl1-a">10文字以内</span></div>
+						<div class="s-form-e-data">
+							<div class="s-input-lo1"><input type="text" value="" maxlength="10" tabindex="0" class="s-form-e-input1  option1" data-js="formInput1"></div>
+						</div><!--/s-form-e-data-->
+					</div><!--/s-form-e-wrap-->
+
+					<div class="s-form-e-wrap">
+						<div class="s-form-e-item"><span class="s-req-m">必須</span><span class="s-form-e-item_ttl1">年代</span></span></div>
+						<div class="s-form-e-data">
+							<select name="s-form-e-era1" class="s-form-e-option option2 era"></select>
+						</div><!--/s-form-e-data-->
+					</div><!--/s-form-e-wrap-->
+
+					<div class="s-form-e-wrap">
+						<div class="s-form-e-item"><span class="s-req-m">必須</span><span class="s-form-e-item_ttl1">最後に歯医者にいったのは？</span></span></div>
+						<div class="s-form-e-data">
+							<select name="inspire" class="s-form-e-option option3">
+								<option value="notanswer">-</option>
+								<option value="within-3m">3か月以内</option>
+								<option value="within-6m">半年以内</option>
+								<option value="within-1y">1年以内</option>
+								<option value="within-3y">1～3年以内</option>
+								<option value="more-3y">それ以上前</option>
+								<option value="not-rem">覚えていない</option>
+							</select>
+						</div><!--/s-form-e-data-->
+					</div><!--/s-form-e-wrap-->
+
+					<div class="s-form-e-wrap">
+						<div class="s-form-e-item"><span class="s-req-m">必須</span><span class="s-form-e-item_ttl1">歯磨きの頻度は？</span></span></div>
+						<div class="s-form-e-data">
+							<select name="inspire" class="s-form-e-option option4">
+								<option value="notanswer">-</option>
+								<option value="3td">1日3回</option>
+								<option value="2td">1日2回</option>
+								<option value="1td">1日1回</option>
+								<option value="1t3d">2-3日に1回</option>
+								<option value="notoften">あまりしない</option>
+							</select>
+						</div><!--/s-form-e-data-->
+					</div><!--/s-form-e-wrap-->
+
+					<div class="s-form-e-wrap">
+						<div class="s-form-e-item"><span class="s-req-m">必須</span><span class="s-form-e-item_ttl1">どちらかというと？</span></span></div>
+						<div class="s-form-e-data">
+							<select name="inspire" class="s-form-e-option option5">
+								<option value="notanswer">-</option>
+								<option value="decay">虫歯になりやすい</option>
+								<option value="tartar">歯石が付きやすい</option>
+								<option value="notsure">よくわからない</option>
+							</select>
+						</div><!--/s-form-e-data-->
+					</div><!--/s-form-e-wrap-->
+
+					<div class="s-form-e-wrap">
+						<div class="s-form-e-item"><span class="s-req-o">任意</span><span class="s-form-e-item_ttl1">写真アップロード</span></span></div>
+						<div class="s-form-e-data">
+							<div class="s-input-lo1">
+								<input type="file" value="" maxlength="10" tabindex="0" class="s-form-e-input2 option6" data-js="formInput1">
+							</div>
+							<div class="preview">
+								<img class="pic_preview" id="img">
+								<span class="preview_text">preview</span>
+							</div>
+							<div class="analysis">解析結果
+								<div class="ana_canvas">
+									<canvas id="canvas"></canvas>
+								</div>
+							</div>
+
+						</div><!--/s-form-e-data-->
+					</div><!--/s-form-e-wrap-->
+
+				</div><!--/s-form-e-->
+			</div><!--/sim-section-body-->				
+
+			<!-- <img id="img" src="img/meeting.jpg" alt="">
+			<canvas id="canvas"></canvas> -->
+
+
+			<div class="submit_btn">
+				<div class="btn_hearing disable">ヒアリング中...</div>
+				<div class="btn btn_anime bg_anime f-submit" id="btn-hover">
+					<span>シミュレーションスタート</span>
+				</div>
+			</div>
+		</section>
+
+
+		<button class="clear">テスト用clearボタン</button>
+		<!-- <button class="t-form">Firebase_storage</button> -->
+
+		<footer>
+			<div class="footer">©2023 - ORAL HEALTH SIMULATION site</div>
+		</footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main.js" type="module"></script>
+	</body>
+</html>

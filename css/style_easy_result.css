@@ -1,0 +1,384 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Noto Sans JP";
+    margin: auto;
+}
+
+
+.navi{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navititle{
+    padding: 50px 25px;
+    font-size: 20px;
+}
+
+.navititle a{
+    color: white;
+    text-decoration: none;
+    font-family: "Noto Sans JP";
+}
+
+
+.btn a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px 5px 20px;
+}
+
+
+.teeth_kun {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A6D8BE;
+}
+
+.main_pic{
+    height: 200px;
+}
+
+
+footer{
+    height: 30px;
+    background-color: #A6D8BE;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* @media only screen and (min-width: 350px) { */
+    body{
+    background-position: top;
+    background-repeat: no-repeat;
+    }
+    .main{
+        text-align: center;
+        height: 200px;
+        background-color: #A6D8BE;
+	}
+
+    .main_message{
+        padding-top: 20px;
+        font-family: 'Cormorant', serif;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+        font-weight: bold;
+        color: white;
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+    .main_message_2{
+        text-align: center;
+        font-family: 'Cormorant', serif;
+        color: white;
+        font-size: 15px;
+    }
+    .main_message_3{
+        text-align: center;
+        font-family: 'Cormorant', serif;
+        color: white;
+        font-size: 15px;
+        line-height: 40px;
+    }
+
+
+
+/* ここからシミュレーションフォーム */
+    .res-section{
+		background-color: #F0F0F0;
+	}
+
+	.res-section-body{
+		padding: 20px 20px;
+	}
+
+	.res-h2{
+		text-align: center;
+		font-size: 25px;
+        padding-top: 5px;
+		padding-bottom: 35px;
+		color: #295D42;
+		font-weight: bold;
+
+	}
+
+	.s-form-e{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.s-form-e-wrap {
+		padding-bottom: 20px;
+		width: 400px;
+		margin: 0 auto;
+	}
+
+    .s-form-e-wrap-res {
+		padding-bottom: 20px;
+		margin: 0 15vw;
+	}
+
+	.s-req-o{
+		color:#9DC3E6;
+		padding-right: 10px;
+	}
+
+	.s-req-m{
+		color: #F4B183;
+		padding-right: 10px;
+	}
+
+	.s-form-e-item{
+		font-weight: bold;
+	}
+
+	.s-form-e-item_ttl1-a{
+		font-size: 5px;
+	}
+
+	.s-form-e-input1 {
+		height: 3em;
+		width: 230px;
+		padding: 0 16px;
+		border-radius: 4px;
+		border: none;
+		box-shadow: 0 0 0 1px #ccc inset;
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
+
+	.s-form-e-input2 {
+		height: 3em;
+		width: 280px;
+		padding: 5px 0;
+		border-radius: 4px;
+		border: none;
+
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
+
+	.s-form-e-option {
+		height: 3em;
+		width: 260px;
+		padding: 0 16px;
+		border-radius: 4px;
+		border: none;
+		box-shadow: 0 0 0 1px #ccc inset;
+	}
+
+	.preview{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 1px dotted #333333;
+		border-radius: 5px;
+		width: 300px;
+		height: 250px;
+	}
+	
+    .ai_result{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 1px dotted #333333;
+		border-radius: 5px;
+		width: 400px;
+		height: 300px;
+        margin-bottom: 50px;
+	}
+	
+	/* .pic_ai_result{
+		max-width: 300px;
+		max-height: 250px;
+    } */
+    .result_name_era{
+        padding-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .result_judge{
+        padding-bottom: 5px;
+    }
+
+    .lf_judge{
+        padding-bottom: 5px;
+    }
+
+
+
+
+/* @media only screen and (max-width: 760px) {
+    body{
+    background-position: top;
+    background-repeat: no-repeat;
+    /* background-size: 100vw; */
+	/* } */ 
+/* 
+    .main{
+        text-align: center;
+        height: 200px;
+        background-color: #A6D8BE;
+	}
+
+    .main_message{
+        padding-top: 20px;
+        font-family: 'Cormorant', serif;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+        font-weight: bold;
+        color: white;
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+    .main_message_2{
+        text-align: center;
+        font-family: 'Cormorant', serif;
+        color: white;
+        font-size: 15px;
+    }
+    .main_message_3{
+        text-align: center;
+        font-family: 'Cormorant', serif;
+        color: white;
+        font-size: 15px;
+        line-height: 40px;
+    }
+
+
+
+/* ここからシミュレーションフォーム */
+    /* .res-section{
+		background-color: #F0F0F0;
+	}
+
+	.res-section-body{
+		padding: 20px 20px;
+	}
+
+	.res-h2{
+		text-align: center;
+		font-size: 25px;
+        padding-top: 5px;
+		padding-bottom: 35px;
+		color: #295D42;
+		font-weight: bold;
+
+	}
+
+	.s-form-e{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.s-form-e-wrap {
+		padding-bottom: 20px;
+		width: 270px;
+		margin: 0 auto;
+	}
+
+    .s-form-e-wrap-res {
+		padding-bottom: 20px;
+		width: 400px;
+		margin: 0 auto;
+	}
+
+	.s-req-o{
+		color:#9DC3E6;
+		padding-right: 10px;
+	}
+
+	.s-req-m{
+		color: #F4B183;
+		padding-right: 10px;
+	}
+
+	.s-form-e-item{
+		font-weight: bold;
+	}
+
+	.s-form-e-item_ttl1-a{
+		font-size: 5px;
+	}
+
+	.s-form-e-input1 {
+		height: 3em;
+		width: 230px;
+		padding: 0 16px;
+		border-radius: 4px;
+		border: none;
+		box-shadow: 0 0 0 1px #ccc inset;
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
+
+	.s-form-e-input2 {
+		height: 3em;
+		width: 280px;
+		padding: 5px 0;
+		border-radius: 4px;
+		border: none;
+
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
+
+	.s-form-e-option {
+		height: 3em;
+		width: 260px;
+		padding: 0 16px;
+		border-radius: 4px;
+		border: none;
+		box-shadow: 0 0 0 1px #ccc inset;
+	}
+
+	.preview{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 1px dotted #333333;
+		border-radius: 5px;
+		width: 300px;
+		height: 250px;
+	}
+	
+    .ai_result{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 1px dotted #333333;
+		border-radius: 5px;
+		width: 300px;
+		height: 250px;
+        margin-bottom: 50px;
+	}
+	
+	.pic_ai_result{
+		max-width: 300px;
+		max-height: 250px;
+    }
+    .result_name_era{
+        padding-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .result_judge{
+        padding-bottom: 5px;
+    }
+
+    .lf_judge{
+        padding-bottom: 5px;
+    }
+
+}
+ */ 
