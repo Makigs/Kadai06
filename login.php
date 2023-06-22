@@ -29,7 +29,7 @@
 
 
 				$dsn = "mysql:dbname=gs_0620;host=localhost";
-				$user = "root";
+				$user = "";
 				$password_db = "";
 				$dbh = new PDO($dsn,$user,$password_db);
 				$dbh->query("SET NAMES utf8");
